@@ -1,78 +1,42 @@
-# Forward-kinematics-using-robo-analyzer
+# EXPERIMENT-02-Spatial-Descriptions-using-Robo-DK
+## AIM:
+To Simulate the Robot DK software for spatial descriptions
 
-## AIM: 
-To analyze the forward kinematics using DH paramerters for a 4 and 6 dof robot using roboanalyzer and polt the graph for link cordinates and joint angles
-### COMPONENTS REQUIRED:
-1.Robo analyzer software  
+## System Requirement:
+Windows 7 / 10, 8GB Ram, 2GB Graphics Card, 1024x768 pixel resolution display, RoboDK
 
+## Procedure:
+Select File➔ Open.
 
-### THEORY: 
-  
-Forward Kinematics
+![image](https://user-images.githubusercontent.com/113594316/190379141-f3c33120-246f-4bf2-9ff1-9788867b9e78.png)
 
-A manipulator is composed of serial links which are affixed to each other revolute or prismatic joints from the base frame through the endeffector. 
-Calculating the position and orientation of the endeffector in terms of the joint variables is called as forward kinematics. 
-In order to have forward kinematics for a robot mechanism in a systematic manner, one should use a suitable kinematics model. 
-Denavit-Hartenberg method that uses four parameters is the most common method for describing the robot kinematics. 
-These parameters ai1, α −,1idi and θ the link length, link twist, link offset and joint angle, respectively. 
-A coordinate frame is attached to each joint to determine DH parameters. Zi axis of the coordinate frame is pointing along the rotary or sliding direction general manipulator.
+Select open library online ➔ Select Brand ➔ Filter Doosan Robotics ➔ Choolse M1013 Model
 
-Denavit Hartenberg Parameters
-With DH Parameters, solving for the Forward Kinematics is easy.  only need to take four parameters for each joint 
-i: θifor the joint angle, 
-αi for the link twist, 
-difor the link offset, and 
-ai for the link length. Once I’ve obtained them, I can just plug them in to this transformation matrix:
+![image](https://user-images.githubusercontent.com/113594316/190379488-e53f2fd4-e085-4052-9df4-ca4f6c9635e8.png)
 
+Press open ➔ Allow popup RoboDK protocol ➔ waite until load the robot in screen
 
-![image](https://user-images.githubusercontent.com/36288975/170172719-ed7befc9-2894-4344-bfd5-be831bb05308.png)
+![image](https://user-images.githubusercontent.com/113594316/190380188-461db19c-e6b1-410e-b3b1-4e3876b55681.png)
 
- ![image](https://user-images.githubusercontent.com/36288975/170172766-b8aeb788-7fd7-4de7-b340-f04656707ebd.png)
+![image](https://user-images.githubusercontent.com/113594316/190380630-87df0e9c-87e4-49cf-8ac2-1fb2e9cbfd2b.png)
 
- 
+### Create Targets
 
-### PROCEDURE:
+Robot positions are recorded as Targets. Follow these steps to create two targets as a new home target and approach target respectively:
 
+1. Double click the robot to show the robot panel
 
+2. Select Tool frame with respect to Reference Frame and enter the X Y Z as a translation distance and Rx Ry Rz as a rotation angle to reach target
 
+3. Select Target 1
 
+4. Right Click and pick teach current position
 
-### SIMULATION 
- 
- 
- 
- 
- 
- 
- 
- ### PLOT 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+Similaly fix target in the given position 
 
- 
- 
+## Output:
+<img width="956" alt="k2" src="https://user-images.githubusercontent.com/93427201/191745404-2592bbb0-89f8-4bb7-8199-447121f78fce.png">
 
+## Results:
 
-
-
-
-
-
-
-
-
-
-
-
-
-### RESULTS :  
+Thus, the spatial-Descriptions of the given ta is given target simulated Using Robo DK. 
